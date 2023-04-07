@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Kaushan+Script|Oswald&display=swap");
+
+// $background-on
+// $background-alt
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+// COLOR VARIABLES
+$color-primary: rgb(255, 92, 92);
+$color-primary-light: rgba(#ff2d2d, 0.6);
+$color-primary-dark: #ff2d2d;
+
+$color-secondary: #1b9999;
+$color-secondary-light: rgba(#1b9999, 0.5);
+$color-secondary-dark: rgba(#1b9999, 0.8);
+
+$color-tertiary: #615551;
+$color-tertiary-dark: #918581;
+$color-tertiary-light: rgba(#615551, 0.7);
+
+// Dark Mode color
+$color-dark-primary: rgb(150, 65, 255);
+$color-dark-primary-dark: #6c63ff;
+
+$color-dark-secondary: #03dac5;
+
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+
+// put all variable which will be changed during theme change
+:root { //html
+  --color-you: blue;
+}
+
+// [data-theme="dark"] {
+//   --color-black: #fff;
+// }
+
+// .darkMode {
+//     --color-you: red;
+// }
+
+$color-black: #000;
+$color-black-dark: #333;
+$color-black-light: #555;
+
+$color-dark: #121212;
+
+$color-shadow: #777;
+$color-shadow-dark: #666;
+$color-shadow-light: #999;
+
+$color-white: #fff;
+$color-white-light: rgba(255, 255, 255, 0.9);
+$color-white-dark: rgba($color-white, 0.8);
+$phone: 37.5em;
+$tab-port: 56.25em;
+$tab-land: 75em;
+$normal-desktop: 100em;
+$big-desktop: 112.5em;
+
+$default-box-shadow: 0 1.2rem 2.4rem rgba($color-black, 0.15);
+$box-shadow-light: 0 1.2rem 2.4rem rgba($color-black, 0.1);
+$box-shadow-medium: 0 1.2rem 2.4rem rgba($color-black, 0.2);
+$box-shadow-dark: 0 1.2rem 2.4rem rgba($color-black, 0.3);
+
+$border-line: 1px solid rgba($color-white, 0.09);
+
+$default-font-size: 1.8rem;
+$font-size-lw: 1.2rem;
+$font-size-sm: 1.4rem;
+$font-size-md: 1.6rem;
+$font-size-bg: 2rem;
+$font-size-hg: 2.2rem;
+
+$default-border-radius: 9px;
+$border-radius-l: 3px;
+$border-radius-md: 5px;
+$border-radius-d: 11px;
+$border-radius-round: 10rem;
+
+$linear-gradient-primary: linear-gradient(
+  to right,
+  $color-primary-light,
+  $color-primary
+);
+$linear-gradient-secondary: linear-gradient(
+  to right bottom,
+  $color-secondary-light,
+  $color-secondary-dark
+);
+$linear-gradient-tertiary: linear-gradient(
+  to right bottom,
+  $color-tertiary-light,
+  $color-tertiary-dark
+);
+
+$linear-gradient-primary-opacity: linear-gradient(
+  to right bottom,
+  rgba($color-primary-light, 0.5),
+  rgba($color-primary-dark, 0.5)
+);
+// $linear-gradient-secondary-opacity: linear-gradient(
+//   to right bottom,
+//   rgba($color-secondary-light, 0.8),
+//   rgba($color-secondary-dark, 0.8)
+// );
+// $linear-gradient-tertiary-opacity: linear-gradient(
+//   to right bottom,
+//   rgba($color-tertiary-light, 0.8),
+//   rgba($color-tertiary-dark, 0.8)
+
+// we added change event on checkbox  jese hi wo checked trigger event

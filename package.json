@@ -1,0 +1,12 @@
+{
+  "name": "5.light-dark-mode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "sass": "node-sass -w sass/main.scss style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

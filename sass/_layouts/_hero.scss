@@ -1,0 +1,16 @@
+.hero {
+  height: 90vh;
+  @include flex-center;
+  &__text-content {
+    text-align: center;
+  }
+  &__heading {
+    font-weight: 500;
+    font-size: 6.2rem;
+    font-style: italic;
+  }
+  &__description {
+    font-weight: 300;
+    color: $color-shadow-light;
+  }
+}

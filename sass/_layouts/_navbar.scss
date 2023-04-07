@@ -1,0 +1,116 @@
+.nav {
+  @include flex-center;
+  justify-content: space-between;
+  font-size: $default-font-size;
+  font-weight: 600;
+  height: 7rem;
+  padding: 0 2.4rem;
+  background: rgba($color-white, 1);
+  box-shadow: 0 0.5rem 1rem 0.4rem rgba($color-black, 0.05);
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  &__list {
+    @include flex-center;
+    gap: 2.4rem;
+  }
+  &__item {
+  }
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-primary;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 300;
+      letter-spacing: 2px;
+    }
+
+    &:active,
+    &:hover {
+      color: darken($color-primary, 3);
+    }
+  }
+}
+
+.toggle__switch {
+  &-wrapper {
+    @include flex-center;
+    gap: 1.8rem;
+  }
+  &-text {
+    color: $color-shadow;
+    font-weight: 400;
+    font-size: $font-size-sm;
+  }
+  &-icon {
+    font-size: 2.4rem;
+    color: $color-black-dark;
+    cursor: pointer;
+  }
+  &-btn {
+    background: rgba($color-shadow, 0.5);
+    height: 2.4rem;
+    border-radius: $border-radius-round;
+    width: 4.4rem;
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.7);
+      height: 1.7rem;
+      width: 1.7rem;
+
+      position: absolute;
+      top: 0.4rem;
+      left: -0.1rem;
+      width: 1.7rem;
+      transform: translateX(0.4rem);
+      transition: all 0.3s;
+    }
+  }
+
+  &-btn--darkMode::before {
+    transform: translateX(2.4rem);
+  }
+}
+
+.darkMode .nav {
+  background: $color-dark;
+  &__list {
+    @include flex-center;
+    gap: 2.4rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $color-dark-primary;
+    }
+
+    &:active,
+    &:hover {
+      color: $color-dark-primary-dark;
+    }
+  }
+}
+
+.darkMode .toggle__switch {
+  &-text {
+    color: $color-white;
+  }
+  &-icon {
+    font-size: 2.4rem;
+    color: $color-white;
+    cursor: pointer;
+  }
+  &-btn {
+    background: $color-dark-primary;
+  }
+}

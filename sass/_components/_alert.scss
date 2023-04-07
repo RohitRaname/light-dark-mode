@@ -1,0 +1,31 @@
+.alert {
+  &-box {
+  }
+
+  & {
+
+    width: 100%;
+    height: 100%;
+    color: $color-white;
+    font-size: $default-font-size;
+    font-weight: 500;
+    line-height: 1.6;
+    width: 60rem;
+    border-radius: 5px;
+    box-shadow: $box-shadow-light;
+    height: 5rem;
+    @include flex-center;
+    position: fixed;
+    top: 2.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .3s;
+    &--success {
+      background: $linear-gradient-primary;
+    }
+
+    &--failure {
+      background: $linear-gradient-tertiary;
+    }
+  }
+}

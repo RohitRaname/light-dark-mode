@@ -1,0 +1,118 @@
+.review {
+  &__content {
+  }
+
+  &__btns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 10rem);
+    font-size: $font-size-md;
+    gap: 2.4rem;
+  }
+  &__text {
+    font-size: $font-size-sm;
+  }
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  font-size: $font-size-md;
+  text-transform: capitalize;
+  color: $color-white;
+  padding: 0.8rem 1.2rem;
+
+  &--primary,
+  &--secondary {
+    &-outline,
+    &-outline-disabled {
+      color: $color-black;
+    }
+  }
+
+  &--primary {
+    background-color: $color-primary;
+
+    &-outline {
+      background: none;
+      border: 1px solid $color-primary;
+    }
+
+    &-outline-disabled {
+      border: 1px solid $color-primary;
+      opacity: 0.4;
+      background-color: $color-white;
+    }
+
+    &-disabled {
+      opacity: 0.4;
+      background-color: $color-primary;
+    }
+  }
+  &--secondary {
+    background-color: $color-secondary;
+
+    &-outline {
+      background: none;
+      border: 1px solid $color-secondary;
+    }
+
+    &-outline-disabled {
+      border: 1px solid $color-primary;
+      opacity: 0.4;
+    }
+
+    &-disabled {
+      background-color: $color-secondary;
+      opacity: 0.4;
+    }
+  }
+}
+
+.darkMode .btn {
+  color: $color-black;
+  &--primary {
+    background-color: $color-dark-primary;
+
+    &-outline,
+    &-outline-disabled,
+    &-disabled {
+      color: $color-white;
+    }
+
+    &-outline {
+      border: 1px solid $color-dark-primary;
+    }
+
+    &-outline-disabled {
+      border: 1px solid $color-dark-primary;
+      opacity: 0.34;
+      background: transparent;
+    }
+
+    &-disabled {
+      background-color: $color-dark-primary;
+    }
+  }
+  &--secondary {
+    background-color: $color-dark-secondary;
+
+    &-outline,
+    &-outline-disabled,
+    &-disabled {
+      color: $color-white;
+    }
+    &-outline {
+      border: 1px solid $color-dark-secondary;
+    }
+
+    &-outline-disabled {
+      border: 1px solid $color-primary;
+      opacity: 0.34;
+      background: transparent;
+    }
+
+    &-disabled {
+      background-color: $color-dark-secondary;
+    }
+  }
+}

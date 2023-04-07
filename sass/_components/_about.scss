@@ -1,0 +1,31 @@
+.about {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+  }
+
+  &__box {
+    text-align: center;
+    box-shadow: $default-box-shadow;
+    padding: 2.4rem 3.2rem;
+    background: $color-white;
+  }
+
+  &__title {
+    color: $color-shadow;
+
+    font-weight: 300;
+  }
+  &__img {
+    width: 100%;
+  }
+}
+
+.darkMode .about {
+  &__box {
+    background: transparent;
+    border: 1px solid $color-secondary;
+    border-radius: 9px;
+  }
+}

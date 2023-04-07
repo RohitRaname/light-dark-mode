@@ -1,0 +1,17 @@
+.footer {
+  font-size: 6.2rem;
+  height: 90vh;
+  @include flex-center;
+
+  &__list {
+    @include flex-center;
+    gap: 4.8rem;
+  }
+  &__item {
+  }
+  &__link {
+    &:link,
+    &:visited {
+    }
+  }
+}
